@@ -40,29 +40,32 @@ const App = () => {
                             <ExpenseTotal />
                         </div>                        
                         }        
-                       
+                    </div>
+
+                    <h2 className='mt-3'>Allocation</h2>
+                    <div className='row mt-3'>
                         {
-                        //ExpenseTotal component
+                        //ExpenseList component
                         <div className='col-sm'>
                             <ExpenseList />
                         </div>    
                         }         
+                    </div>
 
                         {
-                        //ExpenseTotal component
-                        <div className='col-sm'>
-                            <ExpenseItem />
-                        </div>    
-                        }        
+                        //ExpenseItem component
+                        //<div className='col-sm'>
+                        //    <ExpenseItem />
+                        //</div>    
+                        }                                    
 
                         {
-                        //ExpenseTotal component
+                        //AllocationForm component
                         <div className='col-sm'>
                             <AllocationForm />
                         </div>    
                         }        
-
-                </div>
+                                       
             </div>
         </AppProvider>
     );
