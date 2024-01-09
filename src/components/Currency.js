@@ -10,13 +10,13 @@ const Currency = () => {
     return (
 
 <div className='alert alert-secondary'>
-    Currency ({newCurrency})
-<select className="custom-select" id="inputGroupSelect01" onChange={(handleCurrencyChange)}>
-    <option value="$" name="Dollar">$ Dollar</option>
-    <option value="£" name="Pound">£ Pound</option>
-    <option value="€" name="Euro">€ Euro</option>
-    <option value="₹" name="Rupee">₹ Rupee</option>
-</select>
+    <span>Currency ({newCurrency})</span>
+    <select className="custom-select" id="inputGroupSelect01" onChange={(handleCurrencyChange)}>
+        <option value="$" name="Dollar">$ Dollar</option>
+        <option value="£" name="Pound">£ Pound</option>
+        <option value="€" name="Euro">€ Euro</option>
+        <option value="₹" name="Rupee">₹ Rupee</option>
+    </select>
 </div>
 );
 };
