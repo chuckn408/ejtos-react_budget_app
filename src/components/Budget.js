@@ -7,6 +7,10 @@ const Budget = () => {
     const handleBudgetChange = (event) => {
         setNewBudget(event.target.value);
     }
+    if(newBudget > 20000) {
+        alert("The value cannot exceed remaining funds "+remaining);
+        return;
+    }
     return (
 
 <div className='alert alert-secondary'>
