@@ -8,17 +8,23 @@ const Currency = () => {
         setNewCurrency(event.target.value);
     }
     return (
+        
 
-<div className='alert alert-secondary'>
-    <span>Currency ({newCurrency})</span>
-    <select className="custom-select" id="inputGroupSelect01" onChange={(handleCurrencyChange)}>
-        <option value="$" name="Dollar">$ Dollar</option>
-        <option value="£" name="Pound">£ Pound</option>
-        <option value="€" name="Euro">€ Euro</option>
-        <option value="₹" name="Rupee">₹ Rupee</option>
-    </select>
-</div>
-);
+
+        <div className='alert alert-secondary'>
+            <div class="">
+                <span>Currency ({newCurrency})</span>
+                <div class="dropdown-options" name="currency" onChange={handleCurrencyChange}>
+                    <select>
+                    <option>$ Dollar</option>
+                    <option>£ Pound</option>
+                    <option>€ Euro</option>
+                    <option>₹ Rupee</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default Currency
